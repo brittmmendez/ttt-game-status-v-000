@@ -10,5 +10,5 @@ def won?(board)
     end
 end
 def full?(board)
-  position_taken?(board).any? {|positions| positions==" "||""}
+  position_taken?(board).none? {|positions| positions==" "||""}
 end
