@@ -11,7 +11,7 @@ def won?(board)
 end
 def full?(board)
   position_taken?(board,index).each do |position|
-    if position==" " || position==""
+    if position!==" " || position!==""
       true
     else
       false
