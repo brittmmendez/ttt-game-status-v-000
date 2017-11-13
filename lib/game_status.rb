@@ -9,6 +9,12 @@ def won?(board)
     position_taken?(board, w_combination[1]) && board[w_combination[0]]==board[w_combination[1]] && board[w_combination[1]]==board[w_combination[2]]
     end
 end
+
 def full?(board)
   board.none? {|position| position=="" ||position==" "}
+end
+
+def draw(board)
+  if full?== true && won?==false
+  end
 end
