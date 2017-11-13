@@ -19,4 +19,5 @@ def draw?(board)
      ture
    else
      false
+   end
 end
