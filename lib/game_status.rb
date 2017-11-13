@@ -21,3 +21,14 @@ end
 def over?(board)
   draw?(board) ||won?(board)
 end
+
+def winner(board)
+  if WIN_COMBINATIONS.find do|w_combination|
+    (position_taken?(board, w_combination[1]) && board[w_combination[0]]==board[w_combination[1]] && board[w_combination[1]]==board[w_combination[2]])
+    && board[w_combination[0]]=="X" &&board[w_combination[1]]=="X" &&board[w_combination[2]]=="X"
+    puts "X"
+  elsif WIN_COMBINATIONS.find do|w_combination|
+    (position_taken?(board, w_combination[1]) && board[w_combination[0]]==board[w_combination[1]] && board[w_combination[1]]==board[w_combination[2]])
+    && board[w_combination[0]]=="O" &&board[w_combination[1]]=="O" &&board[w_combination[2]]=="O"
+    puts "O"
+  end
