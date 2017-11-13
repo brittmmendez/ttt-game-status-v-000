@@ -16,7 +16,7 @@ end
 
 def draw?(board)
    if won?(board)!= true && full?(board)==true
-     ture
+     true
    else
      false
    end
