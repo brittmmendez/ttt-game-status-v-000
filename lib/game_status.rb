@@ -11,6 +11,5 @@ def won?(board)
     end
 end
 
-def full?(board)
-puts "hi"
+def full?(board).none? { |positions| positions==" "||""  }
 end
