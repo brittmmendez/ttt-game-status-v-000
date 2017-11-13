@@ -23,6 +23,6 @@ def over?(board)
 end
 
 def winner(board)
-  won?(board) &&  board[w_combination[0]]=="X" board[w_combination[1]]=="X" && board[w_combination[2]]=="X"
-  won?(board) &&  board[w_combination[0]]=="O" board[w_combination[1]]=="O" && board[w_combination[2]]=="O"
+  if won?(board)
+    board[won?(board)[1]]
 end
