@@ -9,3 +9,5 @@ def won?(board)
     position_taken?(board, w_combination[1]) && board[w_combination[0]]==board[w_combination[1]] && board[w_combination[1]]==board[w_combination[2]]
     end
 end
+def full?(board).none? { |positions| positions==" "||""  }
+end
