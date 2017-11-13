@@ -14,7 +14,7 @@ def full?(board)
   board.none? {|position| position=="" ||position==" "}
 end
 
-def draw(board)
-  if full?(board) && !won?(board)
+def draw?(board)
+  if full?(board)== true && won?(board)==false
   end
 end
