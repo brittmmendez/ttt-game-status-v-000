@@ -8,4 +8,4 @@ def won?(board)
   WIN_COMBINATIONS.any? do |w_combination|
      board(w_combination[0])==board(w_combination[1])&& board(w_combination[0])==board(w_combination[2]
     end
-end  
+end
