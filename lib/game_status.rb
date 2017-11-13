@@ -9,7 +9,9 @@ def won?(board)
     if board(w_combination[0])==board(w_combination[1]) && board(w_combination[1])==board(w_combination[2])
       true
     else
-      false      
+      false
     end
   end
 end
+
+
